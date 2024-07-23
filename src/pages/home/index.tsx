@@ -2,9 +2,12 @@ import { useEffect, useState } from "react"
 import api from "../../services/api"
 import { filme } from "../../types/filmes";
 import { Filmes } from "../../components/filmes";
+import { FaCircleNotch } from "react-icons/fa6";
+import "./styles.css"
 
 export const Home = () => {
     const [filmes, setFilmes] = useState<filme[] | []>([]);
+    const [loading, setLoading] = useState<boolean>(true)
 
     useEffect(() => {
 
@@ -19,6 +22,7 @@ export const Home = () => {
 
             if (response.status === 200) {
                 setFilmes(response.data.results)
+                setLoading(false)
             }
 
             return false;
@@ -27,6 +31,12 @@ export const Home = () => {
         carregarFilmes();
 
     }, [])
+
+    if (loading) {
+        return (
+            <FaCircleNotch className="loading-icon" />
+        )
+    }
 
     return (
         <div className="container" >

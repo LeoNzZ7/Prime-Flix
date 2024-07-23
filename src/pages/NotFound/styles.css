@@ -1,0 +1,32 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+}
+
+.error-icon {
+  font-size: 200px;
+  color: #116feb;
+}
+
+.not-found h1 {
+  margin-bottom: 20px;
+}
+
+.not-found button {
+  background-color: #116feb;
+  padding: 20px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.not-found button:hover {
+  background-color: #0f57b6;
+  transition: background-color 0.8s ease;
+}

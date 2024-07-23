@@ -3,6 +3,26 @@
 }
 
 .lista-filmes {
-  max-width: 800px;
   margin: 14px auto;
+  width: 800px;
+}
+
+.loading-icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  position: relative;
+
+  margin-top: 200px;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
