@@ -10,7 +10,7 @@ export const MainRoutes = () => {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/filme" element={<Filme />} />
+                <Route path="/filme/:id" element={<Filme />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
