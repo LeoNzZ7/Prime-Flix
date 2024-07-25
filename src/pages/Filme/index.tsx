@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import api from "../../services/api"
 import { filme } from "../../types/filmes";
 import { FaCircleNotch } from "react-icons/fa6";
+import { toast } from "react-toastify";
 import "./styles.css"
 
 export const Filme = () => {
@@ -48,13 +49,13 @@ export const Filme = () => {
             const hasFilme = filmesSalvos.some((filmesSalvo) => filmesSalvo.id === filme.id)
 
             if (hasFilme) {
-                alert("ESSE FILME JÁ ESTA NA LISTA");
+                toast.warn("ESSE FILME JÁ ESTA NA LISTA");
                 return;
             }
 
             filmesSalvos.push(filme);
             localStorage.setItem("@primeflix", JSON.stringify(filmesSalvos));
-            alert("FILME SALVO COM SUCESSO")
+            toast.success("FILME SALVO COM SUCESSO")
         }
     }
 
