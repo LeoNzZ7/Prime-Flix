@@ -6,10 +6,10 @@
 - Assistir aos trailers
 - Criar sua lista personalizada de filmes favoritos
 Explore o mundo do cinema de forma fácil e divertida com Prime Flix!
-</span
+</span>
 
 # 🖥️ Projeto na Prática
-<span>Prime Flix foi desenvolvido utilizando as melhores práticas do desenvolvimento web, com foco em performance e usabilidade. Navegue pelo nosso catálogo, assista aos trailers e organize seus filmes favoritos em um ambiente intuitivo e responsivo.</span>
+<span> Prime Flix foi desenvolvido utilizando as melhores práticas do desenvolvimento web, com foco em performance e usabilidade. Navegue pelo nosso catálogo, assista aos trailers e organize seus filmes favoritos em um ambiente intuitivo e responsivo.</span>
 
 # 🚀 Tecnologias Utilizadas
 - TypeScript: Para tipagem estática e maior robustez do código.
