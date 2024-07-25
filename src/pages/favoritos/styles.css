@@ -8,32 +8,3 @@
 .meus-filmes h1 {
   margin-bottom: 14px;
 }
-
-.meus-filmes span {
-  font-size: 18px;
-}
-
-.meus-filmes ul {
-  width: 820px;
-}
-
-.meus-filmes ul li {
-  margin-bottom: 10px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
-}
-
-.meus-filmes div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.meus-filmes a {
-  text-decoration: none;
-  color: #116feb;
-  margin-right: 14px;
-}

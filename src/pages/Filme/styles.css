@@ -42,6 +42,11 @@
   font-weight: bold;
 }
 
+.more-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 .area-button a {
   text-decoration: none;
   color: #fff;

@@ -1,0 +1,54 @@
+.filme-favorito {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+  margin-bottom: 20px;
+}
+
+.filme-favorito__banner {
+  width: 400px;
+}
+
+.filme-favorito__banner img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.filme-favorito__detalhes {
+  padding-left: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.filme-favorito__detalhes .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: start;
+}
+
+.filme-favorito__detalhes .buttons button,
+.filme-favorito__detalhes .buttons a {
+  background-color: #116feb;
+  border: 0;
+  border-radius: 4px;
+  height: 50px;
+  margin-right: 15px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.filme-favorito__detalhes .buttons button:hover,
+.filme-favorito__detalhes .buttons a:hover {
+  background-color: #005eda;
+  transition: background-color 0.8s ease;
+}

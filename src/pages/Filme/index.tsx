@@ -13,6 +13,7 @@ export const Filme = () => {
     const [filme, setFilme] = useState<filme>()
     const [loading, setLoading] = useState<boolean>(true)
 
+
     useEffect(() => {
         async function loadFilme() {
             await api.get(`/movie/${id}`, {
@@ -66,7 +67,12 @@ export const Filme = () => {
             <img src={`https://image.tmdb.org/t/p/original/${filme?.backdrop_path}`} alt={filme?.title} />
             <h3>Sinopse</h3>
             <span>{filme?.overview}</span>
-            <strong>Avaliação: {filme?.vote_average} / 10</strong>
+            <div className="more-info" >
+                <strong>
+                    {`Lançamento: ${new Date(filme?.release_date as string).toLocaleString('pt-br', { weekday: "long", year: "numeric", month: "short", day: "numeric" })}`}
+                </strong>
+                <strong>Avaliação: {filme?.vote_average} / 10</strong>
+            </div>
 
             <div className="area-button" >
                 <button onClick={() => salvarFilme()} >Salvar</button>
